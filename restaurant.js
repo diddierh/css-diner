@@ -84,6 +84,8 @@ $(document).ready(function(){
 
 });
 
+window.onresize = resetTable;
+
 function buildLevelmenu(){
   for(var i = 0; i < levels.length; i++){
     var level = levels[i];

@@ -217,9 +217,11 @@ bento:before {
 }
 
 .editor {
+
   position: relative;
   text-align: left;
-  width: 750px;
+  max-width: 750px;
+  width: 100%;
   margin: 0 auto;
   border: solid 10px rgba(0,0,0,.35);
   -webkit-border-radius: 10px;
@@ -833,7 +835,9 @@ plate orange:nth-last-child(4)
   text-align: center;
   margin-top: 35px;
   padding: 20px;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
   color: #666;
   font-size: 15px;
   margin: 0 auto;
@@ -844,6 +848,7 @@ plate orange:nth-last-child(4)
   font-weight: 400;
   font-size: 20px;
   color: #888;
+
 }
 
 .what-is-this a {
@@ -883,13 +888,15 @@ plate orange:nth-last-child(4)
 }
 
 .left-col {
+  min-width: 60%;
   width: calc(100% - 375px);
   text-align: center;
 }
 
 .right-col {
   position: absolute;
-  width: 375px;
+  max-width: 375px;
+  width: 40%;
   height: 100%;
   right: 0;
   top: 0px;
